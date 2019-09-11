@@ -1,9 +1,10 @@
-# [Fabrizio Miano - Resume]
+# Resume - CV 
 
-My resume/CV in [Bootstrap](http://getbootstrap.com/) essentially taken from [this template](https://startbootstrap.com/template-overviews/resume/) created by [Start Bootstrap](http://startbootstrap.com/). 
+My resume/CV in [Bootstrap](http://getbootstrap.com/).
+Essentially taken from [this template](https://startbootstrap.com/template-overviews/resume/) created by [Start Bootstrap](http://startbootstrap.com/). 
 
 ## Preview
 
-[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://blackrockdigital.github.io/startbootstrap-resume/)
+[![Resume Preview](https://raw.githubusercontent.com/fabriziomiano/fabriziomiano.github.io/master/resume.png)](https://raw.githubusercontent.com/fabriziomiano/fabriziomiano.github.io/master/resume.png)
 
 **[View Live Preview](https://fabriziomiano.github.io/)**
