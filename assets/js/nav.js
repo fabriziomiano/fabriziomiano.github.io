@@ -14,6 +14,21 @@ on(
   true
 );
 
+// Close on link click
+on(
+  'click',
+  '#navbar .nav-link',
+  function () {
+    if (document.body.classList.contains('mobile-nav-active')) {
+      document.body.classList.remove('mobile-nav-active');
+      const toggle = select('.mobile-nav-toggle');
+      toggle.classList.add('bi-list');
+      toggle.classList.remove('bi-x');
+    }
+  },
+  true
+);
+
 // Back-to-top button
 let backToTop = select('.back-to-top');
 if (backToTop) {
