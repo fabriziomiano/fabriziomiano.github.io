@@ -1,0 +1,50 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+
+# Bundler (if you ever bundle install --path vendor/bundle)
+.bundle/
+vendor/bundle/
+
+# RubyGems
+*.gem
+
+# Bundler config
+/.bundle/config
+
+# Logs
+*.log
+
+# macOS FS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows FS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Vim swap files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]ss[a-t]
+
+# Temp files
+*~
+*.tmp
+*.temp
+
+# Environment variables
+.env
