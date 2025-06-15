@@ -4,18 +4,13 @@ let typed = select('.typed');
 if (typed) {
   let strings = typed.getAttribute('data-typed-items').split(',');
   new Typed('.typed', {
-    strings, loop: true,
+    strings,
+    loop: true,
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 1000,
     startDelay: 1000,
     showCursor: true,
     cursorChar: '|',
-    contentType: 'html',
-    onStringTyped: function (pos, self) {
-      if (pos === strings.length - 1) {
-        self.cursor.remove();
-      }
-    }
   });
 }
