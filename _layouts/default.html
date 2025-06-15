@@ -5,10 +5,7 @@
     {% include head.html %}
   </head>
   <body>
-    {%- comment -%} This include now outputs your
-    <aside id="sidebar">…</aside>
-    {%- endcomment -%} {% include nav.html %} {%- comment -%} The page content (hero section + main
-    sections) lives in index.md {%- endcomment -%} {{ content }}
+    {% include nav.html %} {{ content }}
 
     <!-- Vendor JS Files -->
     <script src="{{ '/assets/vendor/purecounter/purecounter_vanilla.js' | relative_url }}"></script>
@@ -18,7 +15,6 @@
     <script src="{{ '/assets/vendor/swiper/swiper-bundle.min.js'            | relative_url }}"></script>
     <script src="{{ '/assets/vendor/typed.js/typed.min.js'                  | relative_url }}"></script>
     <script src="{{ '/assets/vendor/waypoints/noframework.waypoints.js'     | relative_url }}"></script>
-    <!-- <script src="{{ '/assets/vendor/php-email-form/validate.js'             | relative_url }}"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script
       src="https://platform.linkedin.com/badges/js/profile.js"
