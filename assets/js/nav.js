@@ -1,19 +1,42 @@
 // assets/js/nav.js
 import { select, on, onscroll } from './utils.js';
 
-// Mobile nav toggle
-on('click', '.mobile-nav-toggle', () => {
-  select('#navbar').classList.toggle('navbar-mobile');
-  // …etc…
-});
+// Mobile nav toggle: toggle `mobile-nav-active` on <body>
+on(
+  'click',
+  '.mobile-nav-toggle',
+  function () {
+    document.body.classList.toggle('mobile-nav-active');
+    // Swap this toggle button’s icon
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+  },
+  true
+);
 
-// Back-to-top visibility
+// Back-to-top button
 let backToTop = select('.back-to-top');
 if (backToTop) {
-  const toggle = () => backToTop.classList[window.scrollY > 100 ? 'add' : 'remove']('active');
-  window.addEventListener('load', toggle);
-  onscroll(document, toggle);
+  const toggleVisibility = () => {
+    backToTop.classList[window.scrollY > 100 ? 'add' : 'remove']('active');
+  };
+  window.addEventListener('load', toggleVisibility);
+  onscroll(document, toggleVisibility);
 }
 
-// Active nav-link on scroll
-// …etc…
+// Active nav-link switching on scroll
+let navLinks = select('#navbar .nav-link', true);
+const activateNavOnScroll = () => {
+  let position = window.scrollY + 200;
+  navLinks.forEach((link) => {
+    if (!link.hash) return;
+    let section = select(link.hash);
+    if (!section) return;
+    link.classList.toggle(
+      'active',
+      position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight
+    );
+  });
+};
+window.addEventListener('load', activateNavOnScroll);
+onscroll(document, activateNavOnScroll);
