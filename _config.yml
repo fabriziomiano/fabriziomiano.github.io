@@ -1,0 +1,3 @@
+# _config.yml
+markdown: kramdown
+theme: minima     # you can leave this or remove if you’re only using your layout
