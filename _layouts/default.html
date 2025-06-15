@@ -5,8 +5,14 @@
     {% include head.html %}
   </head>
   <body>
+    {%- comment -%}
+    This include now outputs your <aside id="sidebar">…</aside>
+    {%- endcomment -%}
     {% include nav.html %}
 
+    {%- comment -%}
+    The page content (hero section + main sections) lives in index.md
+    {%- endcomment -%}
     {{ content }}
 
     <!-- Vendor JS Files -->

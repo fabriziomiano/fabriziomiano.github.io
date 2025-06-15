@@ -3,51 +3,46 @@ layout: default
 title: "Fabrizio Miano, PhD | Resume"
 ---
 
+<!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
   <div class="hero-container" data-aos="fade-in">
     <h1>Fabrizio Miano</h1>
-    <p>I'm a <span class="typed" data-typed-items="Ph.D. in Physics, Tech Enthusiast, Data Expert, Sales and Marketing Business Analyst"></span></p>
+    <p>I'm a <span class="typed" data-typed-items="Sr Business Advisor, Data Expert, PhD in Experimental Particle Physics"></span></p>
   </div>
-</section>
+</section><!-- End Hero -->
 
 <main id="main">
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
+    <div class="container">
       <div class="section-title">
         <h2>About</h2>
-        <p>Hello! I'm Fabrizio (<strong>Fab</strong>), a Senior Business Advisor at STMicroelectronics with a background in physics and data science. Born and raised in Catania, Italy, I hold a PhD from the University of Sussex and have worked at CERN and Leonardo Company. I’m passionate about turning complex data into strategic insights.</p>
       </div>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4" data-aos="fade-right">
           <img src="{{ '/assets/img/profile-img.jpg' | relative_url }}" class="img-fluid" alt="">
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content">
-          <h3>Senior Business Advisor & Data Scientist</h3>
-          <p class="fst-italic">
-            Bridging technology, strategy and analytics to drive impactful business decisions.
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <p class="mb-3">
+            Results-oriented professional with a passion for data, technology, and business, with a track record of extracting
+            value from complex datasets. Certified SAFe® 5 Scrum Master with experience in business solution design and
+            project management. Currently serving as a Business Analytics Manager at STMicroelectronics, focusing on Sales
+            Operations support, cross-functional collaboration, and data-driven decision-making. The role involves designing
+            and implementing robust data solutions with an emphasis on microelectronics and supply chain dynamics.
           </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> January 26, 1987</li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="https://fabriziomiano.github.io">fabriziomiano.github.io</a></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> +39 0123 456789</li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> Catania, Italy</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> {{ 'now' | date: '%Y' | minus: 1987 }}</li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> PhD in Physics</li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> fab@example.com</li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> Available</li>
-              </ul>
-            </div>
-          </div>
+          <p class="mb-3">
+            Previously, a Senior Data Quality Analyst at Coca-Cola HBC, responsible for business-led data governance initiatives
+            to ensure high data quality across the value chain. Also served as a Senior Consultant and Team Leader for Capgemini,
+            leading international agile projects for STMicroelectronics. Past roles include data-science consulting
+            for public administration and defense clients, post-doctoral research at the University of Sussex in data science,
+            and a junior data scientist position with a focus on computer vision.
+          </p>
           <p>
-            After completing my PhD at the University of Sussex and a fellowship at CERN, I transitioned into data science consulting for Leonardo Company. Now at STMicroelectronics, I leverage data and strategy to solve high-impact challenges.
+            Experimental Particle Physics PhD holder from the University of Sussex and CERN as member of the ATLAS experiment
+            at the Large Hadron Collider. Experienced in problem-solving, time management, and analyzing large datasets.
+            Has presented at national and international conferences and has a strong interest in engaging the general public
+            through scientific outreach.
           </p>
         </div>
       </div>
@@ -56,79 +51,151 @@ title: "Fabrizio Miano, PhD | Resume"
 
   <!-- ======= Skills Section ======= -->
   <section id="skills" class="skills section-bg">
-    <div class="container" data-aos="fade-up">
+    <div class="container">
       <div class="section-title">
         <h2>Skills</h2>
-        <p>My technical and professional skillset.</p>
       </div>
       <div class="row skills-content">
-        <div class="col-lg-6">
+
+        <div class="col-lg-3" data-aos="fade-up">
+          <p class="text-center">Coding</p>
           <div class="progress">
-            <span class="skill">Python <i class="val">90%</i></span>
+            <span class="skill">Python<i class="val">Advanced</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-          <!-- repeat for other skills… -->
-        </div>
-        <div class="col-lg-6">
           <div class="progress">
-            <span class="skill">Business Strategy <i class="val">85%</i></span>
+            <span class="skill">Java<i class="val">Beginner</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-          <!-- … -->
+          <div class="progress">
+            <span class="skill">SQL<i class="val">Advanced</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Bash<i class="val">Intermediate</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">HTML5<i class="val">Intermediate</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">JavaScript<i class="val">Beginner</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
         </div>
+
+        <div class="col-lg-3" data-aos="fade-up">
+          <p class="text-center">Versioning/DevOps/Cloud</p>
+          <!-- repeat progress bars for Git, Docker, Azure, AWS -->
+        </div>
+
+        <div class="col-lg-3" data-aos="fade-up">
+          <p class="text-center">Languages</p>
+          <!-- repeat progress bars for Italian, English, Spanish, French -->
+        </div>
+
       </div>
     </div>
   </section><!-- End Skills Section -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container" data-aos="fade-up">
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
       <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>Some of my recent projects.</p>
+        <h2>Resume</h2>
+        <a href="https://github.com/fabriziomiano/tex-cv/raw/master/cv-en.pdf" class="btn btn-outline-primary">Download CV</a>
       </div>
+
+      <!-- Education -->
       <div class="row">
-        <div class="col-lg-12">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-data">Data Science</li>
-            <li data-filter=".filter-web">Web</li>
-            <li data-filter=".filter-ml">Machine Learning</li>
-          </ul>
+        <div class="col-lg-6" data-aos="fade-up">
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>PhD in Physics</h4>
+            <h5>2015 - 2018</h5>
+            <p><em>University of Sussex, Brighton, UK</em></p>
+            <p>“Optimisation studies and data-driven background estimation in searches for the
+            supersymmetric partner of the top quark with the ATLAS Detector at the LHC”. 
+            2018. <a href="http://cds.cern.ch/record/2650559">cds.cern.ch/record/2650559</a></p>
+          </div>
+          <!-- MSc in Physics -->
         </div>
-      </div>
-      <div class="row portfolio-container">
-        <!-- repeat .portfolio-item for each project… -->
+        <!-- Work Experience: Deckchair.com, CERN fellowship… -->
       </div>
     </div>
-  </section><!-- End Portfolio Section -->
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Projects Section ======= -->
+  <section id="projects" class="services">
+    <div class="container">
+      <div class="section-title"><h2>Projects</h2></div>
+      <div class="row">
+        <!-- Icon boxes for each project as in your original HTML -->
+      </div>
+    </div>
+  </section><!-- End Projects Section -->
+
+  <!-- ======= Public Speaking Section ======= -->
+  <section id="publicspeaking" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title"><h2>Public Speaking</h2></div>
+      <!-- All resume-items with seminar titles, dates and links -->
+    </div>
+  </section><!-- End Public Speaking Section -->
+
+  <!-- ======= Awards Section ======= -->
+  <section id="awards" class="section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title"><h2>Awards</h2></div>
+      <div class="row">
+        <!-- All award icon-boxes -->
+      </div>
+    </div>
+  </section><!-- End Awards Section -->
+
+  <!-- ======= Publications Section ======= -->
+  <section id="publications" class="section-bg">
+    <div class="container">
+      <div class="section-title"><h2>Publications</h2></div>
+      <!-- All resume-items with publication lists -->
+    </div>
+  </section><!-- End Publications Section -->
+
+  <!-- ======= Outreach Section ======= -->
+  <section id="outreach">
+    <div class="container">
+      <div class="section-title"><h2>Outreach</h2></div>
+      <!-- All outreach resume-items -->
+    </div>
+  </section><!-- End Outreach Section -->
 
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact section-bg">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Get in touch with me.</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="info-box mb-4">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Via Roma 123, Catania, Italy</p>
+    <div class="container">
+      <div class="section-title"><h2>Contact</h2></div>
+      <div class="row" data-aos="fade-in">
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address"><i class="bi bi-geo-alt"></i><h4>Location:</h4><p>Catania, Italy</p></div>
+            <div class="email"><i class="bi bi-envelope"></i><h4>Email:</h4><p>fabriziomiano@gmail.com</p></div>
+            <div class="phone"><i class="bi bi-phone"></i><h4>Call:</h4><p>+39 333 6066 844</p></div>
           </div>
         </div>
-        <!-- email, phone… -->
       </div>
-      <form action="https://formspree.io/f/your-form-id" method="post" role="form" class="php-email-form">
-        <!-- form fields… -->
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
     </div>
   </section><!-- End Contact Section -->
 
-</main>
+</main><!-- End #main -->
