@@ -7,7 +7,7 @@ if (typed) {
     strings,
     loop: false,
     typeSpeed: 50,
-    backSpeed: 25,
+    backSpeed: 15,
     backDelay: 1000,
     startDelay: 1000,
     showCursor: true,
