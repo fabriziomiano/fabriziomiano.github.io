@@ -1,6 +1,7 @@
-# Personal Webpage 
+# Personal Webpage
 
-My personal Webpage/Resume/CV in [Bootstrap](http://getbootstrap.com/) using the [iPortfolio template](https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/) created by [Bootstrap Made](https://bootstrapmade.com//). 
+My personal Webpage/Resume/CV in [Bootstrap](http://getbootstrap.com/) using the [iPortfolio template](https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/) created by [Bootstrap Made](https://bootstrapmade.com//).
 
 ## Hosted with love on GitHub
-[Here](https://fabriziomiano.github.io/)
+
+[FabrizioMiano.github.io](https://fabriziomiano.github.io/)
