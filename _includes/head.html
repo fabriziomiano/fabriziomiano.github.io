@@ -3,16 +3,38 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 <title>{{ page.title }}</title>
-<meta property="og:title" content="Fabrizio Miano Resume" />
-<meta property="og:url" content="https://fabriziomiano.com" />
-<meta 
-  property="og:description" 
-  content="Fabrizio Miano, PhD | Senior Business Advisor with a background in physics and data science, showcasing projects, publications, and contact information." 
+
+<!-- SEO & Social meta -->
+<meta
+  name="description"
+  content="Fabrizio Miano — Business Analytics Manager. I help global organisations turn data into strategic advantage across sales, supply-chain and operations."
 />
+<link rel="canonical" href="https://fabriziomiano.com/" />
+
+<!-- OpenGraph (for LinkedIn/Twitter previews) -->
+<meta property="og:title" content="Fabrizio Miano Resume" />
+
+<meta property="og:title" content="Fabrizio Miano — Business Analytics Manager" />
+<meta
+  property="og:description"
+  content="Business Analytics Manager focused on analytics platforms, BI & data-driven decision making for global operations."
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://fabriziomiano.com/" />
 <meta property="og:image" content="{{ '/assets/img/logo.png' | relative_url }}" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="600" />
+<meta property="og:site_name" content="FabrizioMiano.com" />
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fabrizio Miano — Business Analytics Manager" />
+<meta
+  name="twitter:description"
+  content="Business Analytics Manager focused on analytics platforms, BI & data-driven decision making for global operations."
+/>
+<meta name="twitter:image" content="{{ '/assets/img/logo.png' | relative_url }}" />
 
 <link
   href="{{ '/assets/vendor/bootstrap/css/bootstrap.min.css' | relative_url }}"
@@ -31,3 +53,23 @@
 
 <!-- Template Main CSS File -->
 <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet" />
+
+<!-- Favicon -->
+<link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" />
+
+<!-- JSON-LD Person schema -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fabrizio Miano",
+    "alternateName": "Fab Miano",
+    "url": "https://FabrizioMiano.com",
+    "sameAs": ["https://www.linkedin.com/in/fabriziomiano", "https://github.com/fabriziomiano"],
+    "jobTitle": "Business Analytics Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "STMicroelectronics"
+    }
+  }
+</script>
