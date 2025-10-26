@@ -3,85 +3,67 @@
 <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
 <!-- ======= Header ======= -->
-<header id="header">
-  <div class="d-flex flex-column">
-    <div class="profile">
-      <img
-        src="{{ '/assets/img/profile-img.png' | relative_url }}"
-        alt="Profile photo of Fabrizio Miano"
-        class="img-fluid rounded-circle"
-      />
+<header id="header" class="header dark-background d-flex flex-column">
+  <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <h1 class="text-light"><a href="{{ '/' | relative_url }}">Fabrizio Miano</a></h1>
-      <div class="social-links mt-3 text-center">
-        <a href="https://www.linkedin.com/in/fabriziomiano/" target="_blank" class="linkedin"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="https://github.com/fabriziomiano" target="_blank" class="github"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://www.instagram.com/fabriziomiano/" target="_blank" class="instagram"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a
-          href="https://www.youtube.com/channel/UCidOJoPRopozJ0NveDaWLRQ"
-          target="_blank"
-          class="youtube"
-          ><i class="bx bxl-youtube"></i
-        ></a>
-      </div>
-    </div>
-
-    <nav id="navbar" class="nav-menu navbar">
-      <ul>
-        <li>
-          <a href="#hero" class="nav-link scrollto active"
-            ><i class="bx bx-home"></i> <span>Home</span></a
-          >
-        </li>
-        <li>
-          <a href="#about" class="nav-link scrollto"
-            ><i class="bx bx-user"></i> <span>About</span></a
-          >
-        </li>
-        <li>
-          <a href="#resume" class="nav-link scrollto"
-            ><i class="bx bx-file-blank"></i> <span>Resume</span></a
-          >
-        </li>
-        <li>
-          <a href="#projects" class="nav-link scrollto"
-            ><i class="bx bx-chalkboard"></i> <span>Projects</span></a
-          >
-        </li>
-        <li>
-          <a href="#publicspeaking" class="nav-link scrollto"
-            ><i class="bx bx-slideshow"></i> <span>Public Speaking</span></a
-          >
-        </li>
-        <li>
-          <a href="#awards" class="nav-link scrollto"
-            ><i class="bx bx-award"></i> <span>Awards</span></a
-          >
-        </li>
-        <li>
-          <a href="#publications" class="nav-link scrollto"
-            ><i class="bx bx-file"></i> <span>Publications</span></a
-          >
-        </li>
-        <li>
-          <a href="#outreach" class="nav-link scrollto"
-            ><i class="bx bx-game"></i> <span>Outreach</span></a
-          >
-        </li>
-        <li>
-          <a href="#contact" class="nav-link scrollto"
-            ><i class="bx bx-envelope"></i> <span>Contacts</span></a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!-- .nav-menu -->
+  <div class="profile-img">
+    <img
+      src="{{ 'assets/img/my-profile-img.jpg' | relative_url }}"
+      alt=""
+      class="img-fluid rounded-circle"
+    />
   </div>
+
+  <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+    <!-- Uncomment the line below if you also wish to use an image logo -->
+    <!-- <img src="assets/img/logo.png" alt="" /> -->
+    <h1 class="sitename">Fabrizio Miano</h1>
+  </a>
+
+  <div class="social-links text-center">
+    <a href="https://www.linkedin.com/in/fabriziomiano/" target="_blank" class="linkedin"
+      ><i class="bi bi-linkedin"></i
+    ></a>
+    <a href="https://github.com/fabriziomiano" target="_blank" class="google-plus"
+      ><i class="bi bi-github"></i
+    ></a>
+    <a href="https://www.instagram.com/fabriziomiano/" target="_blank" class="instagram"
+      ><i class="bi bi-instagram"></i
+    ></a>
+    <a
+      href="https://www.youtube.com/channel/UCidOJoPRopozJ0NveDaWLRQ"
+      target="_blank"
+      class="twitter"
+      ><i class="bi bi-youtube"></i
+    ></a>
+  </div>
+
+  <!-- ======= Navigation Menu ======= -->
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li>
+        <a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a>
+      </li>
+      <li>
+        <a href="#about"><i class="bi bi-person navicon"></i>About</a>
+      </li>
+      <li>
+        <a href="#resume"><i class="bi bi-file-earmark-person navicon"></i>Resume</a>
+      </li>
+      <li>
+        <a href="#publicspeaking"><i class="bi bi-easel navicon"></i>Public Speaking</a>
+      </li>
+      <li>
+        <a href="#awards"><i class="bi bi-award navicon"></i>Awards</a>
+      </li>
+      <li>
+        <a href="#publications"><i class="bi bi-file-earmark-text navicon"></i>Publications</a>
+      </li>
+      <li>
+        <a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- .nav-menu -->
 </header>
 <!-- End Header -->

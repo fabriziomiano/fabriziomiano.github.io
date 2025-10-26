@@ -1,238 +1,347 @@
 ---
 layout: default
-title: 'Fabrizio Miano, PhD | Resume'
+title: 'FabrizioMiano.com - Business Analytics Manager'
 ---
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-  <div class="hero-container" data-aos="fade-in">
-    <h1>Fabrizio Miano</h1>
-    <p>
-      I'm a
-      <span class="typed" data-typed-items="Ph.D. in Physics, Tech Enthusiast, Data Expert"></span>
-    </p>
-  </div>
-</section>
-<!-- End Hero -->
+<main class="main">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero section dark-background">
+    <img
+      src="{{ 'assets/img/hero-bg.jpg' | relative_url }}"
+      alt="Background pic of Fab walking up Brighton railway station"
+      data-aos="fade-in"
+      class=""
+    />
 
-<main id="main">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <h2>Fabrizio Miano</h2>
+      <p>
+        I'm a
+        <span
+          class="typed"
+          data-typed-items="Ph.D. in Physics, Tech Enthusiast, Data Expert, Analytics Manager, Problem Solver, Lifelong Learner"
+        ></span
+        ><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span
+        ><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+      </p>
+    </div>
+  </section>
+  <!-- End Hero -->
+
   <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="section-title"><h2>About</h2></div>
-      <div class="row">
-        <div class="col-lg-3" data-aos="fade-right">
+  <section id="about" class="about section dark-background">
+    <!-- About me -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About</h2>
+      <p>
+        I'm a Business Analytics Manager at STMicroelectronics, where I design data-driven solutions
+        that help sales and operations teams plan, decide, and perform more effectively.
+      </p>
+      <p>
+        Before focusing on business analytics, I worked across data governance, solution design, and
+        consulting — from Coca-Cola HBC to Capgemini and the public sector. My background in
+        experimental physics and research at CERN taught me how to think analytically, solve complex
+        problems, and build scalable systems that work in the real world. I'm passionate about
+        making data meaningful — not just accessible.
+      </p>
+    </div>
+    <!-- End About me -->
+
+    <!-- Personal Info -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4">
           <img
-            src="{{ '/assets/img/profile-img.jpg' | relative_url }}"
+            src="{{ '/assets/img/my-profile-img.jpg' | relative_url }}"
             class="img-fluid"
-            alt="Fab's Profile Pic"
+            alt=""
           />
         </div>
-        <div class="col-lg-9 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p class="mb-3">
-            I'm a Business Analytics Manager at STMicroelectronics, where I design data-driven
-            solutions that help sales and operations teams plan, decide, and perform more
-            effectively. I bridge technology, business, and analytics to turn complex data into
-            simple, actionable insights.
-          </p>
-          <p class="mb-3">
-            Before focusing on business analytics, I worked across data governance, solution design,
-            and consulting — from Coca-Cola HBC to Capgemini and the public sector. My background in
-            experimental physics and research at CERN taught me how to think analytically, solve
-            complex problems, and build scalable systems that work in the real world.
-          </p>
-          <p>
-            I'm passionate about making data meaningful — not just accessible. I thrive at the
-            intersection of data, business strategy, and people. Outside work, I enjoy sharing
-            knowledge, from mentoring to scientific outreach.
-          </p>
-          <p>
+        <div class="col-lg-8 content">
+          <h2>Business Analytics</h2>
+          <p class="fst-italic py-3">General information and Contacts</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Birthday:</strong>
+                  <span>26 Jan 1987</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Website:</strong>
+                  <a href="https://fabriziomiano.com"><span>FabrizioMiano.com</span></a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
+                  <span>Ph.D. in Physics</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                  {% assign birth_year = 1987 %} {% assign birth_month = 1 %} {% assign birth_day =
+                  26 %} {% assign now = 'now' | date: '%s' %} {% assign birth_date = birth_year |
+                  append: '-' | append: birth_month | append: '-' | append: birth_day | date: '%s'
+                  %} {% assign seconds_old = now | minus: birth_date %} {% assign years_old =
+                  seconds_old | divided_by: 31556926 %}
+
+                  <span>{{ years_old }} </span>
+                </li>
+
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Linkedin:</strong>
+                  <a href="https://linkedin.com/in/fabriziomiano"><span>Get in touch</span></a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Availability:</strong>
+                  <span>Currently employed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="py-3">
+            I bridge technology, business, and analytics to turn complex data into simple,
+            actionable insights. I thrive at the intersection of data, business strategy, and
+            people. Outside work, I enjoy sharing knowledge, from mentoring to scientific outreach.
             I'm fluent in English, Spanish, and Italian, and always curious about what's next in
             analytics and technology.
           </p>
         </div>
       </div>
     </div>
+    <!-- End Personal Info-->
   </section>
   <!-- End About Section -->
 
   <!-- ======= Skills Section ======= -->
-  <section id="skills" class="skills">
-    <div class="container">
-      <div class="section-title">
-        <h2>Core Competencies</h2>
-        <div class="row skills-content">
-          <!-- Strategic / Biz -->
-          <div class="col-lg-4" data-aos="fade-up">
-            <p class="lead mb-3">Strategic / Business</p>
+  <section id="skills" class="skills section light-background">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Skills</h2>
+    </div>
+    <!-- End Section Title -->
 
-            <div class="progress">
-              <span class="skill">Product ownership<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row skills-content skills-animation">
+        <!-- Strategic / Biz -->
+        <div class="col-lg-4">
+          <p class="lead">Strategic / Business</p>
 
-            <div class="progress">
-              <span class="skill">Stakeholder management<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Data-driven decision making<i class="val">Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="65"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+          <div class="progress">
+            <span class="skill"><span>Product ownership</span> <i class="val">Advanced</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
-          <!-- End Strategic / Biz -->
 
-          <!-- Data Platforms -->
-          <div class="col-lg-4" data-aos="fade-up">
-            <p class="lead mb-3">Data Platforms</p>
-            <div class="progress">
-              <span class="skill">Databricks<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">SQL Warehouses<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Power BI / Power Automate<i class="val">Beginner</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+          <div class="progress">
+            <span class="skill"
+              ><span>Stakeholder management</span> <i class="val">Advanced</i></span
+            >
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
-          <!-- End Data Platforms -->
 
-          <!-- Engineering / Tools -->
-          <div class="col-lg-4" data-aos="fade-up">
-            <p class="lead mb-3">Engineering / Tools</p>
-
-            <div class="progress">
-              <span class="skill">Git<i class="val">Proficient</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="100"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">SQL<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Docker<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+          <div class="progress">
+            <span class="skill"
+              ><span>Data-driven decision making</span> <i class="val">Intermediate</i></span
+            >
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
-          <!-- End Engineering / Tools -->
         </div>
+        <!-- End Strategic / Biz -->
+
+        <!-- Data Platforms -->
+        <div class="col-lg-4">
+          <p class="lead">Data Platforms</p>
+          <div class="progress">
+            <span class="skill"><span>Databricks</span> <i class="val">Advanced</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><span>SQL Warehouses</span> <i class="val">Advanced</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><span>Power Automate</span> <i class="val">Intermediate</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Data Platforms -->
+
+        <!-- Engineering / Tools -->
+        <div class="col-lg-4">
+          <p class="lead">Engineering / Tools</p>
+
+          <div class="progress">
+            <span class="skill"><span>Git</span> <i class="val">Proficient</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><span>Python</span> <i class="val">Advanced</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><span>SQL</span> <i class="val">Advanced</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+
+          <!-- <div class="progress">
+            <span class="skill"><span>Docker</span> <i class="val">Advanced</i></span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div> -->
+        </div>
+        <!-- End Engineering / Tools -->
       </div>
     </div>
   </section>
   <!-- End Skills Section -->
 
   <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2>Resume</h2>
-        <a
-          href="https://github.com/fabriziomiano/tex-cv/raw/master/cv-en.pdf"
-          class="btn btn-outline-primary"
-          >Download CV</a
-        >
-      </div>
+  <section id="resume" class="resume section">
+    <div class="container section-title">
+      <h2>Resume</h2>
+      <a
+        href="https://github.com/fabriziomiano/tex-cv/raw/master/cv-en.pdf"
+        class="btn btn-outline-primary"
+        target="_blank"
+      >
+        <i class="bi bi-download me-2"></i> Download PDF
+      </a>
+    </div>
 
+    <div class="container">
       <div class="row">
-        <!-- Professional experience -->
+        <!-- Education  -->
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item pb-0">
+            <h4>PhD in Physics</h4>
+            <h5>2015 - 2018</h5>
+            <p>
+              <em>University of Sussex, Brighton, UK</em>
+            </p>
+            <p>
+              “Optimisation studies and data-driven background estimation in searches for the
+              supersymmetric partner of the top quark with the ATLAS Detector at the LHC”. 2018.
+              <a href="http://cds.cern.ch/record/2650559" target="_blank"
+                >http://cds.cern.ch/record/2650559</a
+              >
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4>MSC in Physics</h4>
+            <h5>2009 - 2014</h5>
+            <p>
+              <em>Università di Catania, Catania, Italy</em>
+            </p>
+            <p>
+              “Emissione di protoni e caratterizzazione spazio-temporale in collisioni tra ioni
+              pesanti”.
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4>BSc in Physics</h4>
+            <h5>2005 - 2009</h5>
+            <p>
+              <em>Università di Catania, Catania, Italy</em>
+            </p>
+            <p>“Spettri di neutroni in sorgenti standard <em>Am/Be</em> e <em>Pu/Be</em>”.</p>
+          </div>
+        </div>
+        <!-- End Education  -->
+
+        <!-- Professional experience -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
           <h3 class="resume-title">Professional Experience</h3>
 
           <div class="resume-item">
-            <h4>Sales & Marketing Business Analytics Manager</h4>
+            <h4>Business Analytics Manager</h4>
             <h6>
               <em>STMicroelectronics, Catania, Italy</em>
             </h6>
@@ -353,124 +462,14 @@ title: 'Fabrizio Miano, PhD | Resume'
             </ul>
           </div>
         </div>
-
-        <!-- Education  -->
-        <div class="col-lg-6" data-aos="fade-up">
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>PhD in Physics</h4>
-            <h5>2015 - 2018</h5>
-            <p>
-              <em>University of Sussex, Brighton, UK</em>
-            </p>
-            <p>
-              “Optimisation studies and data-driven background estimation in searches for the
-              supersymmetric partner of the top quark with the ATLAS Detector at the LHC”. 2018.
-              <a href="http://cds.cern.ch/record/2650559" target="_blank"
-                >http://cds.cern.ch/record/2650559</a
-              >
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>MSC in Physics</h4>
-            <h5>2009 - 2014</h5>
-            <p>
-              <em>Università di Catania, Catania, Italy</em>
-            </p>
-            <p>
-              “Emissione di protoni e caratterizzazione spazio-temporale in collisioni tra ioni
-              pesanti”.
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>BSc in Physics</h4>
-            <h5>2005 - 2009</h5>
-            <p>
-              <em>Università di Catania, Catania, Italy</em>
-            </p>
-            <p>“Spettri di neutroni in sorgenti standard <em>Am/Be</em> e <em>Pu/Be</em>”.</p>
-          </div>
-        </div>
+        <!-- End Professional experience -->
       </div>
     </div>
   </section>
   <!-- End Resume Section -->
 
-  <!-- ======= Projects Section ======= -->
-  <section id="projects" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-          <div class="icon"><i class="bi bi-diagram-3-fill"></i></div>
-          <h4 class="title">ETL and Data Modeling</h4>
-          <p class="description">
-            <a href="https://fabriziomiano.github.io/covid-italy-etl/" target="_blank"
-              >COVID Italy ETL [repository + PowerBI report]</a
-            >
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-          <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-          <h4 class="title">Data Visualization</h4>
-          <p class="description">
-            <a href="https://www.covidash.it/" target="_blank">COVID-19 | Italian data</a>
-            <a href="https://fabriziomiano.github.io/covidashit/" target="_blank">[repository]</a>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="bi bi-clipboard-data-fill"></i></div>
-          <h4 class="title">Data Analytics</h4>
-          <p class="description">
-            <a href="https://fabriziomiano.github.io/cordis-rank/" target="_blank"
-              >CORDIS Rank [repo-only]</a
-            >
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="bx bx-file"></i></div>
-          <h4 class="title">Natural Language Processing</h4>
-          <p class="description">
-            <a href="https://fabriziomiano.github.io/VocabularyAnalyzer/" target="_blank"
-              >Vocabulary Analyzer | Keywords and parts of speech in a given PDF [repo-only]</a
-            >
-          </p>
-          <p class="description">
-            <a href="https://fabriziomiano.github.io/Wagwan/" target="_blank"
-              >Wagwan | Extract topic info from Facebook post comments [repo-only]</a
-            >
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="bx bx-camera"></i></div>
-          <h4 class="title">Computer Vision</h4>
-          <p class="description">
-            <a href="https://fabriziomiano.github.io/spot" target="_blank"
-              >Spot! | Select interesting pictures within a given dataset [repo only]</a
-            >
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="bx bx-magnet"></i></div>
-          <h4 class="title">Scraping</h4>
-          <p class="description">
-            <a href="https://fabriziomiano.github.io/linkedin-scraper" target="_blank"
-              >Linkedin Scraper | Scrape LinkedIn profiles and jobs [repo only]</a
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
   <!-- ======= Public speaking Section ======= -->
-  <section id="publicspeaking" class="services section-bg">
+  <section id="publicspeaking" class="services section light-background">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>Public Speaking</h2>
@@ -623,39 +622,48 @@ title: 'Fabrizio Miano, PhD | Resume'
   <!-- ======= End Public Speaking Section ======== -->
 
   <!-- ======= Awards Section ======= -->
-  <section id="awards" class="services">
+  <section id="awards" class="services section">
+    <div class="container section-title">
+      <h2>Awards</h2>
+    </div>
     <div class="container">
-      <div class="section-title">
-        <h2>Awards</h2>
-      </div>
-
       <div class="row">
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-          <div class="icon"><i class="bi bi-award-fill"></i></div>
-          <h4 class="title">STFC Impact Acceleration Account</h4>
-          <p class="description">2018 - Post-doctoral Fellowship</p>
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+          <div class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
+          <div>
+            <h4 class="title">STFC Impact Acceleration Account</h4>
+            <p class="description">2018 - Post-doctoral Fellowship</p>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="bi bi-award-fill"></i></div>
-          <h4 class="title">DISCnet</h4>
-          <p class="description">2018 - 3-month Grant</p>
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
+          <div>
+            <h4 class="title">DISCnet</h4>
+            <p class="description">2018 - 3-month Grant</p>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon"><i class="bi bi-award-fill"></i></div>
-          <h4 class="title">University of Sussex</h4>
-          <p class="description">
-            2016 - Doctoral Overseas Conference Grant for Postgraduate Researchers
-          </p>
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
+          <div>
+            <h4 class="title">University of Sussex</h4>
+            <p class="description">
+              2016 - Doctoral Overseas Conference Grant for Postgraduate Researchers
+            </p>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon"><i class="bi bi-award-fill"></i></div>
-          <h4 class="title">University of Sussex</h4>
-          <p class="description">2015 - PhD scholarship in collaboration with CERN</p>
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
+          <div>
+            <h4 class="title">University of Sussex</h4>
+            <p class="description">2015 - PhD scholarship in collaboration with CERN</p>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon"><i class="bi bi-award-fill"></i></div>
-          <h4 class="title">National Institute for Nuclear Physics</h4>
-          <p class="description">2014 - 1-year MSc scholarship</p>
+        <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon flex-shrink-0"><i class="bi bi-award-fill"></i></div>
+          <div>
+            <h4 class="title">National Institute for Nuclear Physics</h4>
+            <p class="description">2014 - 1-year MSc scholarship</p>
+          </div>
         </div>
       </div>
     </div>
@@ -663,7 +671,7 @@ title: 'Fabrizio Miano, PhD | Resume'
   <!-- End Awards Section -->
 
   <!-- ======= Publications Section ======= -->
-  <section id="publications" class="section-bg">
+  <section id="publications" class="section light-background">
     <div class="container">
       <div class="section-title">
         <h2>Publications</h2>
@@ -749,89 +757,15 @@ title: 'Fabrizio Miano, PhD | Resume'
   </section>
   <!-- End Publications Section -->
 
-  <!-- ======= Outreach Section ======== -->
-  <section id="outreach">
-    <div class="container">
-      <div class="section-title">
-        <h2>Outreach</h2>
-      </div>
-
-      <div
-        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        data-aos="fade-up"
-      >
-        <div class="resume-content">
-          <h3 class="mb-0">#ScienceonBuses</h3>
-          <div class="subheading mb-0">
-            <i class="fas fa-map-marker-alt" aria-hidden="false"></i> Brighton, UK
-          </div>
-          <p>Participated in filming and engaged people on buses about CERN research activities</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary"> Jun 2018</span>
-        </div>
-      </div>
-
-      <div
-        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        data-aos="fade-up"
-      >
-        <div class="resume-content">
-          <h3 class="mb-0">HiSPARC</h3>
-          <div class="subheading mb-0">
-            <i class="fas fa-map-marker-alt" aria-hidden="false"></i> Brighton, UK
-          </div>
-          <p>Helped middle school student build a scintillator for cosmic-ray detection</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary"> Nov 2017</span>
-        </div>
-      </div>
-
-      <div
-        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        data-aos="fade-up"
-      >
-        <div class="resume-content">
-          <h3 class="mb-0">CERN Master class</h3>
-          <div class="subheading mb-0">
-            <i class="fas fa-map-marker-alt" aria-hidden="false"></i> Geneva, Switzerland
-          </div>
-          <p>Talked to a high-school students audience about “The life of a PhD student at CERN”</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary"> May 2016</span>
-        </div>
-      </div>
-
-      <div
-        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        data-aos="fade-up"
-      >
-        <div class="resume-content">
-          <h3 class="mb-0">Brighton Science Festival</h3>
-          <div class="subheading mb-0">
-            <i class="fas fa-map-marker-alt" aria-hidden="false"></i> Brighton, UK
-          </div>
-          <p>Engaged kids through games related to particle physics</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary"> Feb 2015</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ======= End outreach section ====== -->
-
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contacts</h2>
-      </div>
-
-      <div class="row" data-aos="fade-in">
-        <div class="col-lg-4 d-flex align-items-stretch">
+  <section id="contact" class="contact section">
+    <div class="container section-title">
+      <h2>Contact</h2>
+      <p>Do not hesitate to get in touch</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-4">
           <!-- LinkedIn Badge -->
           <div
             class="badge-base LI-profile-badge"
@@ -849,26 +783,37 @@ title: 'Fabrizio Miano, PhD | Resume'
           </div>
         </div>
 
-        <div class="col-lg-8 d-flex align-items-stretch">
-          <div class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-
-              <h4>Location:</h4>
-              <p>Catania, Italy</p>
+        <div class="col-lg-8">
+          <div class="info-wrap">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Catania, Italy</p>
+              </div>
             </div>
 
-            <div class="email">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>fabriziomiano@gmail.com</p>
+              <div>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:fabrizio.miano[at]gmail[dot]com"
+                    >fabrizio.miano[at]gmail[dot]com</a
+                  >
+                </p>
+              </div>
             </div>
 
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+39 333 6066 844</p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176257.6211212236!2d14.97585692554446!3d37.517982572010155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313e2dd761525b5%3A0x58fe876151c83cf0!2sCatania%2C%20Metropolitan%20city%20of%20Catania!5e0!3m2!1sen!2sit!4v1761479357106!5m2!1sen!2sit"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -877,7 +822,3 @@ title: 'Fabrizio Miano, PhD | Resume'
   <!-- End Contact Section -->
 </main>
 <!-- End #main -->
-
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-  <i class="bi bi-arrow-up-short"></i>
-</a>
