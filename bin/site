@@ -18,6 +18,8 @@ run_jekyll() {
   ensure_image
   docker run --rm \
     -e PAGES_REPO_NWO="$REPO_NWO" \
+    -e LANG=C.UTF-8 \
+    -e LC_ALL=C.UTF-8 \
     -e BUNDLE_PATH=/bundle \
     -e BUNDLE_APP_CONFIG=/bundle/config \
     -v "$PWD:/site" \
@@ -39,6 +41,8 @@ case "${1:-build}" in
     docker run --rm -it \
       -p "$PORT:4000" \
       -e PAGES_REPO_NWO="$REPO_NWO" \
+      -e LANG=C.UTF-8 \
+      -e LC_ALL=C.UTF-8 \
       -e BUNDLE_PATH=/bundle \
       -e BUNDLE_APP_CONFIG=/bundle/config \
       -v "$PWD:/site" \

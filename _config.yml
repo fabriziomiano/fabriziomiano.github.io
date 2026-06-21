@@ -1,9 +1,14 @@
 # _config.yml
 markdown: kramdown
-theme: minima
 url: "https://fabriziomiano.com"
 baseurl: ""
 repository: fabriziomiano/fabriziomiano.github.io
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - bin
+  - .devcontainer
