@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Fabrizio Miano data semiconductor monogram</title>
+  <desc id="desc">FM monogram inside a semiconductor chip, connected by data nodes and traces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f2f34"/>
+      <stop offset="0.52" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="trace" x1="112" y1="128" x2="400" y2="384" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#2f80ed"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <g fill="none" stroke="rgba(255,255,255,.34)" stroke-width="16" stroke-linecap="round">
+    <path d="M178 78v56M256 78v56M334 78v56M178 378v56M256 378v56M334 378v56"/>
+    <path d="M78 178h56M78 256h56M78 334h56M378 178h56M378 256h56M378 334h56"/>
+  </g>
+  <rect x="128" y="128" width="256" height="256" rx="48" fill="rgba(255,255,255,.11)" stroke="rgba(255,255,255,.54)" stroke-width="16"/>
+  <path d="M166 342V170h110v42h-61v34h52v40h-52v56h-49Z" fill="#ffffff"/>
+  <path d="M279 342V170h45l37 68 37-68h43v172h-45v-87l-27 48h-18l-27-48v87h-45Z" fill="#ffffff"/>
+  <path d="M158 364c72-78 126-109 212-117" fill="none" stroke="url(#trace)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M174 150c44 62 91 91 154 102" fill="none" stroke="url(#trace)" stroke-width="8" stroke-linecap="round" opacity=".92"/>
+  <g fill="#7dd3fc">
+    <circle cx="158" cy="364" r="15"/>
+    <circle cx="214" cy="318" r="10"/>
+    <circle cx="370" cy="247" r="15"/>
+  </g>
+  <g fill="#2f80ed">
+    <circle cx="174" cy="150" r="12"/>
+    <circle cx="254" cy="220" r="9"/>
+    <circle cx="328" cy="252" r="12"/>
+  </g>
+</svg>

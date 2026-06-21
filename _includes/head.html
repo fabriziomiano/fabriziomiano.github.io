@@ -1,72 +1,106 @@
-<!-- _includes/head.html -->
 <meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}" />
+<meta name="author" content="Fabrizio Miano" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#071112" />
+<meta name="keywords" content="{{ page.keywords | default: 'Fabrizio Miano, Business Analytics Manager, STMicroelectronics, data products, business intelligence, data governance, Databricks, CERN, ATLAS, physics' }}" />
+{% assign canonical_path = '/' %}
+{% if page.lang == 'it' %}{% assign canonical_path = '/it/' %}{% endif %}
+{% if page.lang == 'scn' %}{% assign canonical_path = '/scn/' %}{% endif %}
+<link rel="canonical" href="{{ canonical_path | absolute_url }}" />
+<link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}" />
+<link rel="alternate" hreflang="it" href="{{ '/it/' | absolute_url }}" />
+<link rel="alternate" hreflang="scn" href="{{ '/scn/' | absolute_url }}" />
+<link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}" />
 
-<!-- SEO & Social meta -->
-<meta
-  name="description"
-  content="Fabrizio Miano — Business Analytics Manager. I help global organisations turn data into strategic advantage across sales, supply-chain and operations."
-/>
-
-<!-- OpenGraph (for LinkedIn/Twitter previews) -->
-<meta property="og:title" content="Fabrizio Miano Resume" />
-<meta
-  property="og:description"
-  content="Business Analytics Manager focused on analytics platforms, BI & data-driven decision making for global operations."
-/>
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://fabriziomiano.com/" />
-<meta property="og:image" content="{{ '/assets/img/logo.png' | relative_url }}" />
+<meta property="og:title" content="{{ page.og_title | default: 'Fabrizio Miano - Business Analytics Manager' }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="{{ canonical_path | absolute_url }}" />
+<meta property="og:image" content="{{ '/assets/img/logo.png' | absolute_url }}" />
+<meta property="og:image:alt" content="Fabrizio Miano FM monogram with data and semiconductor visual references" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="600" />
 <meta property="og:site_name" content="FabrizioMiano.com" />
-
-<!-- Twitter card -->
+{% if page.lang == 'it' %}<meta property="og:locale" content="it_IT" />{% elsif page.lang == 'scn' %}<meta property="og:locale" content="scn_IT" />{% else %}<meta property="og:locale" content="en_GB" />{% endif %}
+<meta property="og:locale:alternate" content="en_GB" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="scn_IT" />
+<meta property="profile:first_name" content="Fabrizio" />
+<meta property="profile:last_name" content="Miano" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Fabrizio Miano — Business Analytics Manager" />
-<meta
-  name="twitter:description"
-  content="Business Analytics Manager focused on analytics platforms, BI & data-driven decision making for global operations."
-/>
-<meta name="twitter:image" content="{{ '/assets/img/logo.png' | relative_url }}" />
+<meta name="twitter:title" content="{{ page.og_title | default: 'Fabrizio Miano - Business Analytics Manager' }}" />
+<meta name="twitter:description" content="{{ page.description }}" />
+<meta name="twitter:image" content="{{ '/assets/img/logo.png' | absolute_url }}" />
+<meta name="twitter:image:alt" content="Fabrizio Miano FM monogram with data and semiconductor visual references" />
 
-<!-- Favicons -->
-<link href="{{ '/assets/img/favicon.png' | relative_url }}" rel="icon" />
+<link href="{{ '/assets/img/logo.svg' | relative_url }}" rel="icon" type="image/svg+xml" />
+<link href="{{ '/assets/img/favicon.png' | relative_url }}" rel="alternate icon" />
 <link href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}" rel="apple-touch-icon" />
-
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect" />
-<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet"
-/>
-
-<!-- Vendor CSS Files -->
-<link
-  href="{{ '/assets/vendor/bootstrap/css/bootstrap.min.css' | relative_url }}"
-  rel="stylesheet"
-/>
-<link
-  href="{{ '/assets/vendor/bootstrap-icons/bootstrap-icons.css' | relative_url }}"
-  rel="stylesheet"
-/>
-<link href="{{ '/assets/vendor/aos/aos.css' | relative_url }}" rel="stylesheet" />
-<link
-  href="{{ '/assets/vendor/glightbox/css/glightbox.min.css' | relative_url }}"
-  rel="stylesheet"
-/>
-<link href="{{ '/assets/vendor/swiper/swiper-bundle.min.css' | relative_url }}" rel="stylesheet" />
-
-<!-- Main CSS File -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="{{ '/assets/vendor/bootstrap-icons/bootstrap-icons.css' | relative_url }}" rel="stylesheet" />
 <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
 
-<!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://fabriziomiano.com/#person",
+      "name": "Fabrizio Miano",
+      "alternateName": "Fab Miano",
+      "url": "https://fabriziomiano.com/",
+      "image": "https://fabriziomiano.com/assets/img/my-profile-img.jpg",
+      "jobTitle": {{ page.schema_job_title | default: 'Business Analytics Manager' | jsonify }},
+      "worksFor": {"@type": "Organization", "name": "STMicroelectronics"},
+      "sameAs": [
+        "https://www.linkedin.com/in/fabriziomiano",
+        "https://github.com/fabriziomiano"
+      ],
+      "address": {"@type": "PostalAddress", "addressLocality": "Catania", "addressCountry": "IT"},
+      "alumniOf": [
+        {"@type": "CollegeOrUniversity", "name": "University of Sussex"},
+        {"@type": "CollegeOrUniversity", "name": "Universita di Catania"}
+      ],
+      "knowsAbout": {% if page.lang == 'scn' %}[
+        "Analisi pi lu bisinissi",
+        "Architetturi d'intelligenza di l'affari",
+        "Data governance",
+        "Data products",
+        "Databricks",
+        "SQL",
+        "Python",
+        "Analisi pi li vinniti nta semiconduttura",
+        "Fisica di particeddi",
+        "ATLAS experiment"
+      ]{% else %}[
+        "Business analytics",
+        "Business intelligence architecture",
+        "Data governance",
+        "Data products",
+        "Databricks",
+        "SQL",
+        "Python",
+        "Semiconductor sales analytics",
+        "Particle physics",
+        "ATLAS experiment"
+      ]{% endif %}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://fabriziomiano.com/#website",
+      "url": "https://fabriziomiano.com/",
+      "name": "FabrizioMiano.com",
+      "description": {{ page.description | jsonify }},
+      "publisher": {"@id": "https://fabriziomiano.com/#person"},
+      "inLanguage": {{ page.lang | default: 'en' | jsonify }}
+    }
+  ]
+}
+</script>

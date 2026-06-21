@@ -1,3 +1,9 @@
 # _config.yml
 markdown: kramdown
-theme: minima     # you can leave this or remove if you’re only using your layout
+theme: minima
+url: "https://fabriziomiano.com"
+baseurl: ""
+repository: fabriziomiano/fabriziomiano.github.io
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

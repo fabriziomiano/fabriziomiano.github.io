@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+IMAGE="fabriziomiano-site-jekyll:dev"
+BUNDLE_VOLUME="fabriziomiano_site_bundle"
+REPO_NWO="fabriziomiano/fabriziomiano.github.io"
+PORT="${PORT:-4000}"
+
+ensure_image() {
+  if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
+    docker build -t "$IMAGE" -f .devcontainer/jekyll.Dockerfile .
+  fi
+}
+
+run_jekyll() {
+  ensure_image
+  docker run --rm \
+    -e PAGES_REPO_NWO="$REPO_NWO" \
+    -e BUNDLE_PATH=/bundle \
+    -e BUNDLE_APP_CONFIG=/bundle/config \
+    -v "$PWD:/site" \
+    -v "$BUNDLE_VOLUME:/bundle" \
+    -w /site \
+    "$IMAGE" \
+    bash -lc "bundle check || bundle install; $*"
+}
+
+case "${1:-build}" in
+  image)
+    docker build -t "$IMAGE" -f .devcontainer/jekyll.Dockerfile .
+    ;;
+  build)
+    run_jekyll "bundle exec jekyll build"
+    ;;
+  serve)
+    ensure_image
+    docker run --rm -it \
+      -p "$PORT:4000" \
+      -e PAGES_REPO_NWO="$REPO_NWO" \
+      -e BUNDLE_PATH=/bundle \
+      -e BUNDLE_APP_CONFIG=/bundle/config \
+      -v "$PWD:/site" \
+      -v "$BUNDLE_VOLUME:/bundle" \
+      -w /site \
+      "$IMAGE" \
+      bash -lc "bundle check || bundle install; bundle exec jekyll serve --host 0.0.0.0 --port 4000"
+    ;;
+  clean)
+    rm -rf _site .jekyll-cache .sass-cache .jekyll-metadata
+    ;;
+  *)
+    echo "Usage: bin/site [image|build|serve|clean]" >&2
+    exit 2
+    ;;
+esac

@@ -1,69 +1,21 @@
-<!-- _includes/nav.html -->
-<!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-<!-- ======= Header ======= -->
-<header id="header" class="header dark-background d-flex flex-column">
-  <i class="header-toggle d-xl-none bi bi-list"></i>
-
-  <div class="profile-img">
-    <img
-      src="{{ 'assets/img/my-profile-img.jpg' | relative_url }}"
-      alt=""
-      class="img-fluid rounded-circle"
-    />
-  </div>
-
-  <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-    <!-- Uncomment the line below if you also wish to use an image logo -->
-    <!-- <img src="assets/img/logo.png" alt="" /> -->
-    <h1 class="sitename">Fabrizio Miano</h1>
+<header class="site-header" data-site-header>
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Fabrizio Miano home">
+    <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" />
+    <span>Fabrizio Miano</span>
   </a>
-
-  <div class="social-links text-center">
-    <a href="https://www.linkedin.com/in/fabriziomiano/" target="_blank" class="linkedin"
-      ><i class="bi bi-linkedin"></i
-    ></a>
-    <a href="https://github.com/fabriziomiano" target="_blank" class="google-plus"
-      ><i class="bi bi-github"></i
-    ></a>
-    <a href="https://www.instagram.com/fabriziomiano/" target="_blank" class="instagram"
-      ><i class="bi bi-instagram"></i
-    ></a>
-    <a
-      href="https://www.youtube.com/channel/UCidOJoPRopozJ0NveDaWLRQ"
-      target="_blank"
-      class="twitter"
-      ><i class="bi bi-youtube"></i
-    ></a>
-  </div>
-
-  <!-- ======= Navigation Menu ======= -->
-  <nav id="navmenu" class="navmenu">
-    <ul>
-      <li>
-        <a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a>
-      </li>
-      <li>
-        <a href="#about"><i class="bi bi-person navicon"></i>About</a>
-      </li>
-      <li>
-        <a href="#resume"><i class="bi bi-file-earmark-person navicon"></i>Resume</a>
-      </li>
-      <li>
-        <a href="#publicspeaking"><i class="bi bi-easel navicon"></i>Public Speaking</a>
-      </li>
-      <li>
-        <a href="#awards"><i class="bi bi-award navicon"></i>Awards</a>
-      </li>
-      <li>
-        <a href="#publications"><i class="bi bi-file-earmark-text navicon"></i>Publications</a>
-      </li>
-      <li>
-        <a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a>
-      </li>
-    </ul>
+  <button class="nav-toggle" type="button" aria-label="{{ page.nav_open_label | default: 'Open navigation' }}" data-open-label="{{ page.nav_open_label | default: 'Open navigation' }}" data-close-label="{{ page.nav_close_label | default: 'Close navigation' }}" aria-expanded="false" data-nav-toggle>
+    <i class="bi bi-list"></i>
+  </button>
+  <nav class="site-nav" data-site-nav aria-label="{{ page.nav_label | default: 'Primary navigation' }}">
+    <a href="#about">{{ page.nav_about | default: 'About' }}</a>
+    <a href="#story">{{ page.nav_story | default: 'Story' }}</a>
+    <a href="#work">{{ page.nav_work | default: 'Work' }}</a>
+    <a href="#talks">{{ page.nav_talks | default: 'Talks' }}</a>
+    <a href="#contact">{{ page.nav_contact | default: 'Contact' }}</a>
   </nav>
-  <!-- .nav-menu -->
+  <nav class="language-switcher" aria-label="{{ page.language_label | default: 'Language selector' }}">
+    <a{% if page.lang == 'en' %} class="active"{% endif %} href="{{ '/' | relative_url }}" hreflang="en">EN</a>
+    <a{% if page.lang == 'it' %} class="active"{% endif %} href="{{ '/it/' | relative_url }}" hreflang="it">IT</a>
+    <a{% if page.lang == 'scn' %} class="active"{% endif %} href="{{ '/scn/' | relative_url }}" hreflang="scn">SCN</a>
+  </nav>
 </header>
-<!-- End Header -->
